@@ -1,0 +1,56 @@
+body {
+    min-height: 100vh;
+    justify-content: center;
+    width: 34%;
+    margin: auto;
+    align-items: center;
+    font-family: Verdana;
+    background-color: #666;
+  }
+  .input {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    background-color: cadetblue;
+    border-radius: 7px;
+  }
+  #firstNum, #secondNum {
+    padding: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 30%;
+    font-size: 18px;
+    background-color: #bdf;
+    border: none;
+    border-radius: 7px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 34px;
+  }
+  button {
+    padding: 8px;
+    margin-top: 3%;
+    display: block;
+    font-size: 18px;
+    width: 20%;
+    background-color: #bdf;
+    border: none;
+    border-radius: 7px;
+  }
+  select {
+    padding: 8px;
+    font-size: 18px;
+    background-color: #bdf;
+    border: none;
+    border-radius: 7px;
+  }
+  #firstNum:hover, #secondNum:hover {
+    background-color: #ddd;
+  }
+  button:hover {
+    background-color: #ddd;
+  }
+  select:hover {
+    background-color: #ddd;
+  }
