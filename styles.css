@@ -1,13 +1,12 @@
 body {
-    min-height: 100vh;
-    justify-content: center;
-    width: 34%;
-    margin: auto;
-    align-items: center;
     font-family: Verdana;
     background-color: #666;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
   }
-  .input {
+  .container {
     text-align: center;
     font-size: 18px;
     padding: 15px;
@@ -16,8 +15,6 @@ body {
   }
   #firstNum, #secondNum {
     padding: 10px;
-    margin-right: 25px;
-    margin-left: 25px;
     width: 30%;
     font-size: 18px;
     background-color: #bdf;
@@ -46,11 +43,11 @@ body {
     border-radius: 7px;
   }
   #firstNum:hover, #secondNum:hover {
-    background-color: #ddd;
+    background-color: #9bd;
   }
   button:hover {
-    background-color: #ddd;
+    background-color: #9bd;
   }
   select:hover {
-    background-color: #ddd;
+    background-color: #9bd;
   }

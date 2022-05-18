@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <head>
-            <title>Basic calculator</title>
-            <link rel="stylesheet" href="styles.css">
-            <script src="scripts.js"></script>
-        </head>
-        <div class="input">
-          <h1>Basic calculator</h1>
-          <div class="label">
-            <input id="firstNum"  placeholder="number 1"
-                  type="number" min="0">
-            <input id="secondNum"   placeholder="number 2"
-                  type="number" min="0">
-          </div>
-          <div class="buttons">
-            <button id="start" onclick="calc()">
-            calculate
-            </button>
-            <button id="clear"  onclick="resetData()">clear</button>
-          </div>
-          <div class="select">
-            <select id="select"   onchange="selectOperator()">
-              <option>+</option>
-              <option>-</option>
-              <option>x</option>
-              <option>/<option>
-            </select>
-         </div>
-         <div class="result">
-           Result: <span id="result"></span>
-         </div>
-        </div>
-      </body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Basic calculator</h1>
+      <div class="label">
+        <input id="firstNum"  placeholder="number 1" type="number" min="0">
+        <input id="secondNum"   placeholder="number 2" type="number" min="0">
+      </div>
+      <div class="buttons">
+        <button id="start" onclick="calc()">calculate</button>
+        <button id="clear"  onclick="resetData()">clear</button>
+      </div>
+      <div class="select">
+        <select id="select"   onchange="selectOperator()">
+          <option>+</option>
+          <option>-</option>
+          <option>x</option>
+          <option>/<option>
+        </select>
+      </div>
+      <div class="result">
+        Result: <span id="result"></span>
+      </div>
+    </div>
+  </body>
 </html>
