@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Basic calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
   </head>
   <body>
     <div class="container">
@@ -14,11 +13,11 @@
         <input id="secondNum"   placeholder="number 2" type="number" min="0">
       </div>
       <div class="buttons">
-        <button id="start" onclick="calc()">calculate</button>
-        <button id="clear"  onclick="resetData()">clear</button>
+        <button id="start">calculate</button>
+        <button id="clear" onclick="resetData()">clear</button>
       </div>
       <div class="select">
-        <select id="select"   onchange="selectOperator()">
+        <select id="select" onchange="selectOperator()">
           <option>+</option>
           <option>-</option>
           <option>x</option>
@@ -29,5 +28,6 @@
         Result: <span id="result"></span>
       </div>
     </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
