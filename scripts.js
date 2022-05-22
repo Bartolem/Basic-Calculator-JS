@@ -1,14 +1,14 @@
 let firstNum = document.getElementById("firstNum");
 let secondNum = document.getElementById("secondNum"); 
 let result = document.getElementById("result");
-let buttonCalc = document.getElementById("start");
-/*TODO add button clear  
-write onSubmit method */
+let buttonCalc = document.getElementById("buttonCalc");
+let clear = document.getElementById("clear");
+let select = document.getElementById("select");
 
 function resetData() {
-    firstNum = "";
-    secondNum = "";
-    result = "";
+    firstNum.value = "";
+    secondNum.value = "";
+    result.innerHTML = "";
     }
 
 function add() {
@@ -58,12 +58,21 @@ function calc() {
   }
   
   function onSubmit() {
-
+    if (firstNum.value === "") {
+      alert("You need to pass number 1!");
+    }
+    else if (secondNum.value === "") {
+      alert("You need to pass number 2!");
+    }
+    else {
+      calc();
+    }
   }
 
   function start() {
-    buttonCalc.addEventListener("click", () => calc());
-    console.log(firstNum);
+    buttonCalc.addEventListener("click", () => onSubmit());
+    clear.addEventListener("click", () => resetData());
+    select.addEventListener("click", () => selectOperator());
   }
 
   start();
