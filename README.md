@@ -1,6 +1,7 @@
-## About Basic Calculator JS
+# Basic Calculator JS
 
-#### My first JavaScript tiny project. Simple calculator with basic functionalities.
+## About
+This is my first JavaScript tiny project. Simple calculator with basic functionalities.
 
 ## Functionality
 * Addition
