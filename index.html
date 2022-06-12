@@ -8,9 +8,13 @@
   <body>
     <div class="container">
       <h1>Basic calculator</h1>
+      <div class="result">
+        <label>Result: </label>
+        <span id="result"></span>
+      </div>
       <div class="label">
-        <input id="firstNum"  placeholder="number 1" type="number" min="0">
-        <input id="secondNum"   placeholder="number 2" type="number" min="0">
+        <input id="firstNum" type="number" min="0" maxlength="8">
+        <input id="secondNum" type="number" min="0" maxlength="8">
       </div>
       <div class="buttons">
         <button id="buttonCalc">calculate</button>
@@ -23,9 +27,6 @@
           <option>x</option>
           <option>/<option>
         </select>
-      </div>
-      <div class="result">
-        Result: <span id="result"></span>
       </div>
     </div>
     <script src="scripts.js"></script>

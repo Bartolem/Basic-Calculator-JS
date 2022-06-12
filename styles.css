@@ -5,21 +5,31 @@ body {
     align-items:center;
     justify-content: center;
     height: 100vh;
+    color: rgb(105, 105, 103);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .container {
+    width: 400px;
     text-align: center;
     font-size: 18px;
     padding: 15px;
     background-color: cadetblue;
     border-radius: 7px;
+    display: flex;
+    flex-direction: column;
   }
   #firstNum, #secondNum {
     padding: 10px;
     width: 30%;
     font-size: 18px;
-    background-color: #bdf;
-    border: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid #666;
     border-radius: 7px;
+    background-color: rgb(185, 188, 190);
+    border: 2px solid #666;
+    
   }
   h1 {
     text-align: center;
@@ -27,27 +37,32 @@ body {
   }
   button {
     padding: 8px;
-    margin-top: 3%;
-    display: block;
     font-size: 18px;
-    width: 20%;
-    background-color: #bdf;
-    border: none;
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left;
+    width: 30%;
+    background-color: rgb(195, 195, 195);
+    border: 2px solid #666;
     border-radius: 7px;
+    color: rgb(105, 105, 103);
+    text-transform: uppercase;
+  }
+  #buttonCalc {
+    margin-left: 70px;
   }
   select {
     padding: 8px;
     font-size: 18px;
-    background-color: #bdf;
-    border: none;
+    background-color: rgb(195, 195, 195);
+    border: 2px solid #666;
     border-radius: 7px;
+    color: rgb(105, 105, 103);
   }
+  button:hover, select:hover, 
   #firstNum:hover, #secondNum:hover {
-    background-color: #9bd;
+    background-color: rgb(180, 180, 180);
   }
-  button:hover {
-    background-color: #9bd;
-  }
-  select:hover {
-    background-color: #9bd;
+  .result {
+    margin-bottom: 20px;
   }
