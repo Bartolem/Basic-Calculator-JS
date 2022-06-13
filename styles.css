@@ -1,68 +1,109 @@
 body {
-    font-family: Verdana;
-    background-color: #666;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    height: 100vh;
-    color: rgb(105, 105, 103);
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  font-family: Verdana;
+  background-color: #bbb;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
+  color: #dde;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  background-color: rgb(10, 95, 192);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+#firstNum, #secondNum {
+  padding: 10px;
+  width: 30%;
+  font-size: 18px;
+  margin-right: 20px;    
+  margin-left: 20px;
+  color: #666;
+  border: 2px solid #666;
+  border-radius: 7px;
+  background-color: rgb(185, 188, 190);
+  border: 2px solid #666;  
+}
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+}
+  
+button {
+  padding: 8px;
+  font-size: 18px;
+  margin-top: 30px;
+  width: 30%;
+  background-color: rgb(195, 195, 195);
+  border: 2px solid #666;
+  border-radius: 7px;
+  color: rgb(105, 105, 103);
+  text-transform: uppercase;
+  text-align: center;  
+}
+
+select {
+  padding: 8px;
+  font-size: 18px;
+  margin-top: 30px;
+  background-color: rgb(195, 195, 195);
+  border: 2px solid #666;
+  border-radius: 7px;
+  color: rgb(105, 105, 103);
+}
+
+button:hover, select:hover, 
+#firstNum:hover, #secondNum:hover {
+  background-color: rgb(180, 180, 180);  
+}
+
+.result {
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+@media(max-width:540px) {
   .container {
-    width: 400px;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-    background-color: cadetblue;
-    border-radius: 7px;
-    display: flex;
-    flex-direction: column;
+    flex: none;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
   }
+
   #firstNum, #secondNum {
-    padding: 10px;
-    width: 30%;
-    font-size: 18px;
-    margin-right: 20px;
-    margin-left: 20px;
-    border: 2px solid #666;
-    border-radius: 7px;
-    background-color: rgb(185, 188, 190);
-    border: 2px solid #666;
-    
+    width: 25%;
+    margin: 5px;
   }
-  h1 {
-    text-align: center;
-    font-size: 34px;
-  }
+
   button {
-    padding: 8px;
-    font-size: 18px;
-    margin-top: 30px;
-    margin-left: 20px;
-    float: left;
     width: 30%;
-    background-color: rgb(195, 195, 195);
-    border: 2px solid #666;
-    border-radius: 7px;
-    color: rgb(105, 105, 103);
-    text-transform: uppercase;
+    font-size: 15px;
   }
-  #buttonCalc {
-    margin-left: 70px;
+
+}
+
+@media(max-width:400px) {
+  h1 {
+    font-size: 30px;
   }
-  select {
-    padding: 8px;
-    font-size: 18px;
-    background-color: rgb(195, 195, 195);
-    border: 2px solid #666;
-    border-radius: 7px;
-    color: rgb(105, 105, 103);
+
+  #firstNum, #secondNum {
+    margin: 0;
   }
-  button:hover, select:hover, 
-  #firstNum:hover, #secondNum:hover {
-    background-color: rgb(180, 180, 180);
+
+  button {
+    font-size: 13px;
   }
-  .result {
-    margin-bottom: 20px;
-  }
+}

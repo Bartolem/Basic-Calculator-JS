@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic calculator</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -14,19 +15,17 @@
       </div>
       <div class="label">
         <input id="firstNum" type="number" min="0" maxlength="8">
-        <input id="secondNum" type="number" min="0" maxlength="8">
-      </div>
-      <div class="buttons">
-        <button id="buttonCalc">calculate</button>
-        <button id="clear">clear</button>
-      </div>
-      <div class="select">
         <select id="select">
           <option>+</option>
           <option>-</option>
           <option>x</option>
           <option>/<option>
         </select>
+        <input id="secondNum" type="number" min="0" maxlength="8">
+      </div>
+      <div>
+        <button id="buttonCalc">calculate</button>
+        <button id="clear">clear</button>
       </div>
     </div>
     <script src="scripts.js"></script>
